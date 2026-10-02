@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>The Cookie Bakehouse — Homemade NYC Style Cookies</title>
+<meta name="description" content="Galletas estilo Nueva York, gruesas y de centro fundente. Hechas a mano por encargo, envíos a toda España. Pide por WhatsApp o Instagram." />
+<meta name="theme-color" content="#3A2317" />
+
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;1,6..96,400;1,6..96,500;1,6..96,600&family=Manrope:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css?v=20260628" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="The Cookie Bakehouse — Homemade NYC Style Cookies" />
+<meta property="og:description" content="Galletas gruesas, de borde crujiente y centro fundente. Hechas a mano por encargo." />
+<meta property="og:type" content="website" />
+</head>
+<body>
+
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<!-- =======================================================================
+     SPLASH — doble red de seguridad: animación CSS 4.5s + JS hide
+     ======================================================================= -->
+<div class="splash" id="splash" aria-hidden="true">
+  <div class="splash-inner">
+    <div class="splash-word" aria-label="The Cookie Bakehouse">
+      <span class="splash-letter">T</span><span class="splash-letter">h</span><span class="splash-letter">e</span>
+      <span class="splash-space"></span>
+      <span class="splash-letter">C</span><span class="splash-letter">o</span><span class="splash-letter">o</span><span class="splash-letter">k</span><span class="splash-letter">i</span><span class="splash-letter">e</span>
+      <span class="splash-space"></span>
+      <span class="splash-letter splash-letter--em">B</span><span class="splash-letter splash-letter--em">a</span><span class="splash-letter splash-letter--em">k</span><span class="splash-letter splash-letter--em">e</span><span class="splash-letter splash-letter--em">h</span><span class="splash-letter splash-letter--em">o</span><span class="splash-letter splash-letter--em">u</span><span class="splash-letter splash-letter--em">s</span><span class="splash-letter splash-letter--em">e</span>
+    </div>
+    <div class="splash-bar"><span class="splash-bar-fill"></span></div>
+  </div>
+</div>
+
+<!-- =======================================================================
+     AURORA + GRAIN — capas de fondo globales
+     ======================================================================= -->
+<div class="aurora" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- =======================================================================
+     MARCA LATERAL FIJA (desktop)
+     ======================================================================= -->
+<div class="side-mark" aria-hidden="true">
+  <span class="side-mark-dot"></span>
+  <span class="side-mark-text">HORNEAMOS MAR · VIE — PEDIDOS TODA LA SEMANA</span>
+</div>
+
+<!-- =======================================================================
+     NAV
+     ======================================================================= -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#inicio" class="nav-brand">
+      <span class="nav-brand-mark">TCB</span>
+      <span class="nav-brand-name">The Cookie Bakehouse</span>
+    </a>
+
+    <nav class="nav-links" aria-label="Navegación principal">
+      <a href="#nosotros"><span class="nav-num">01</span>Nosotros</a>
+      <a href="#carta"><span class="nav-num">02</span>Carta</a>
+      <a href="#como-pedir"><span class="nav-num">03</span>Cómo pedir</a>
+      <a href="#el-detalle"><span class="nav-num">04</span>El detalle</a>
+      <a href="#opiniones"><span class="nav-num">05</span>Opiniones</a>
+      <a href="#pedir" class="nav-cta">Pedir caja</a>
+    </nav>
+
+    <button class="nav-burger" id="navBurger" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMobile">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="nav-mobile" id="navMobile">
+    <a href="#nosotros"><span class="nav-num">01</span>Nosotros</a>
+    <a href="#carta"><span class="nav-num">02</span>Carta</a>
+    <a href="#como-pedir"><span class="nav-num">03</span>Cómo pedir</a>
+    <a href="#el-detalle"><span class="nav-num">04</span>El detalle</a>
+    <a href="#opiniones"><span class="nav-num">05</span>Opiniones</a>
+    <a href="#pedir" class="nav-cta">Pedir caja</a>
+  </div>
+</header>
+
+<!-- =======================================================================
+     CURSOR PERSONALIZADO
+     ======================================================================= -->
+<div class="cursor" id="cursor" aria-hidden="true">
+  <div class="cursor-ring" id="cursorRing">
+    <div class="cursor-dot" id="cursorDot"></div>
+  </div>
+  <div class="cursor-label" id="cursorLabel"></div>
+</div>
+
+<main id="contenido">
+
+<!-- =======================================================================
+     HERO
+     ======================================================================= -->
+<section class="hero" id="inicio">
+  <div class="hero-bg" aria-hidden="true">
+    <svg class="hero-illustration" viewBox="0 0 1200 1400" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="heroCookieGlow" cx="50%" cy="42%" r="60%">
+          <stop offset="0%" stop-color="#caa24a" stop-opacity="0.35"/>
+          <stop offset="100%" stop-color="#caa24a" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+      <rect x="0" y="0" width="1200" height="1400" fill="url(#heroCookieGlow)"/>
+      <g class="hero-cookie-big" transform="translate(600,560)">
+        <circle r="330" fill="#caa052" opacity="0.14"/>
+        <circle r="300" fill="#b8862e" opacity="0.5" stroke="#7a4a18" stroke-width="3"/>
+        <circle r="300" fill="none" stroke="#5c1a2b" stroke-width="2" stroke-dasharray="6 10" opacity="0.4"/>
+        <circle cx="-110" cy="-90" r="20" fill="#3a1410" opacity="0.55"/>
+        <circle cx="80" cy="-130" r="26" fill="#3a1410" opacity="0.55"/>
+        <circle cx="150" cy="40" r="18" fill="#3a1410" opacity="0.55"/>
+        <circle cx="-40" cy="120" r="24" fill="#3a1410" opacity="0.55"/>
+        <circle cx="-180" cy="20" r="16" fill="#3a1410" opacity="0.55"/>
+        <circle cx="40" cy="-20" r="14" fill="#3a1410" opacity="0.45"/>
+        <circle cx="170" cy="-180" r="12" fill="#3a1410" opacity="0.4"/>
+        <circle cx="-150" cy="-180" r="14" fill="#3a1410" opacity="0.4"/>
+      </g>
+    </svg>
+  </div>
+  <div class="hero-veil" aria-hidden="true"></div>
+
+  <div class="hero-inner">
+    <p class="hero-kicker reveal" data-reveal>Atelier de Galletas · Homemade NYC Style Cookies / 100% online</p>
+
+    <h1 class="hero-title">
+      <span class="hero-title-line reveal" data-split="words">The Cookie</span>
+      <span class="hero-title-line hero-title-line--em reveal" data-split="words"><em>Bakehouse.</em></span>
+    </h1>
+
+    <p class="hero-tagline reveal" data-reveal>Gruesas, de borde crujiente y centro casi sin cuajar. Horneadas por encargo, nunca de stock.</p>
+
+    <div class="hero-actions reveal" data-reveal>
+      <a href="#pedir" class="btn btn-primary" data-cursor="pedir">
+        <span>Pedir mi caja</span>
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 9H14M14 9L9.5 4.5M14 9L9.5 13.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="#carta" class="btn btn-ghost" data-cursor="ver">
+        <span>Ver la carta</span>
+      </a>
+    </div>
+
+    <div class="hero-foot reveal" data-reveal>
+      <span class="hero-foot-item"><span class="dot-pulse"></span>Hornadas martes y viernes</span>
+      <span class="hero-foot-sep">·</span>
+      <span class="hero-foot-item"><b>Envíos a toda España</b></span>
+    </div>
+  </div>
+
+  <button class="hero-scroll" id="heroScroll" aria-label="Bajar a la carta" data-cursor="ver">
+    <span class="hero-scroll-line"></span>
+    <span class="hero-scroll-text">Carta</span>
+  </button>
+</section>
+
+<!-- =======================================================================
+     MARQUEE
+     ======================================================================= -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span class="marquee-item">Galletas NYC style</span>
+    <span class="marquee-dot">·</span>
+    <span class="marquee-item">Hornadas martes y viernes</span>
+    <span class="marquee-dot">·</span>
+    <span class="marquee-item">Hechas a mano por encargo</span>
+    <span class="marquee-dot">·</span>
+    <span class="marquee-item">Envíos a toda España</span>
+    <span class="marquee-dot">·</span>
+    <span class="marquee-item">8 sabores, todo el año</span>
+    <span class="marquee-dot">·</span>
+    <!-- duplicado para loop infinito -->
+    <span class="marquee-item">Galletas NYC style</span>
+    <span class="marquee-dot">·</span>
+    <span class="marquee-item">Hornadas martes y viernes</span>
+    <span class="marquee-dot">·</span>
+    <span class="marquee-item">Hechas a mano por encargo</span>
+    <span class="marquee-dot">·</span>
+    <span class="marquee-item">Envíos a toda España</span>
+    <span class="marquee-dot">·</span>
+    <span class="marquee-item">8 sabores, todo el año</span>
+    <span class="marquee-dot">·</span>
+  </div>
+</div>
+
+<!-- =======================================================================
+     EL OBRADOR (sección 01 — sobre nosotros)
+     ======================================================================= -->
+<section class="about" id="nosotros">
+  <span class="about-num" aria-hidden="true">01</span>
+
+  <div class="about-grid">
+    <aside class="about-aside reveal" data-reveal>
+      <span class="about-tag">DESDE · 2026 · ONLINE</span>
+      <blockquote class="about-quote">"Si una hornada no sale como tiene que salir, no sale a la venta."</blockquote>
+      <p class="about-meta">Obrador propio · Envíos en caja térmica · Pedido mínimo: caja de 6</p>
+    </aside>
+
+    <div class="about-main">
+      <p class="about-kicker reveal" data-reveal>01 · El obrador</p>
+      <h2 class="about-title reveal" data-split="lines">Empezamos horneando para amigos. <em>Ahora horneamos para vosotros.</em></h2>
+
+      <p class="about-lead reveal" data-reveal>The Cookie Bakehouse nació en una cocina pequeña, probando masas hasta dar con la textura exacta: borde que cruje, centro que casi no ha terminado de cuajar. Ese punto intermedio que en Nueva York se da por hecho y que aquí, casi nadie hacía bien.</p>
+
+      <p class="about-body reveal" data-reveal>Cada caja se hornea por encargo, nunca de stock. Usamos mantequilla de verdad, chocolate troceado a cuchillo y nada de mezclas premezcladas.</p>
+
+      <dl class="about-facts reveal" data-reveal data-facts>
+        <!-- rellenado por JS desde manifest.js; fallback hardcodeado debajo -->
+        <div class="about-fact"><dt>Fundada</dt><dd>2026</dd></div>
+        <div class="about-fact"><dt>Hornadas</dt><dd>Mar · Vie</dd></div>
+        <div class="about-fact"><dt>Envíos</dt><dd>Toda España</dd></div>
+        <div class="about-fact"><dt>Pedido mínimo</dt><dd>Caja de 6</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- =======================================================================
+     LA CARTA (sección 02) — carrusel horizontal pinneado, 8 galletas
+     ======================================================================= -->
+<section class="carta" id="carta">
+  <div class="carta-head">
+    <span class="carta-num" aria-hidden="true">02</span>
+    <p class="carta-kicker reveal" data-reveal>02 · La carta</p>
+    <h2 class="carta-title reveal" data-split="lines">Ocho sabores. <em>Cada uno, su propia masa.</em></h2>
+    <p class="carta-sub reveal" data-reveal>Cuatro clásicas para empezar, luego una edición limitada con una receta por estación para cerrar la <em class="carta-collection">colección</em>.</p>
+  </div>
+
+  <div class="carta-grid" id="cartaGrid">
+    <div class="carta-group">
+      <div class="carta-group-grid">
+        <article class="cookie-card" data-cookie-card style="--c-accent:#5C1A2B; --c-crumb:#3A1410;">
+        <div class="cookie-card-visual">
+          <svg class="cookie-svg" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle class="cookie-base" cx="200" cy="200" r="150" fill="#caa052" opacity="0.12"/>
+            <circle class="cookie-fill" cx="200" cy="200" r="140" fill="#B8862E" opacity="0.55"/>
+            <circle class="cookie-outline" cx="200" cy="200" r="140" fill="none" stroke="#5C1A2B" stroke-width="3" stroke-dasharray="900" stroke-dashoffset="900"/>
+            <g class="cookie-chips" fill="#3A1410">
+              <circle cx="140" cy="150" r="13"/><circle cx="240" cy="130" r="16"/>
+              <circle cx="270" cy="220" r="11"/><circle cx="190" cy="260" r="14"/>
+              <circle cx="120" cy="230" r="10"/><circle cx="210" cy="190" r="9"/>
+              <circle cx="160" cy="200" r="8"/>
+            </g>
+          </svg>
+        </div>
+        <div class="cookie-card-body">
+          <span class="cookie-card-series">Clásica</span>
+          <h3 class="cookie-card-name">Borgoña Negra</h3>
+          <p class="cookie-card-subtitle">Doble chocolate intenso</p>
+          <p class="cookie-card-desc">Masa de cacao oscuro, dos tipos de chocolate troceado a cuchillo y un golpe de sal en escamas. La galleta de la casa: borde crujiente, centro casi sin cuajar.</p>
+          <ul class="cookie-card-ingredients">
+            <li>Chocolate negro 70%</li><li>Chocolate con leche</li><li>Sal en escama</li><li>Mantequilla tostada</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="cookie-card" data-cookie-card style="--c-accent:#5C6B2E; --c-crumb:#7A8C3E;">
+        <div class="cookie-card-visual">
+          <svg class="cookie-svg" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle class="cookie-base" cx="200" cy="200" r="150" fill="#caa052" opacity="0.12"/>
+            <circle class="cookie-fill" cx="200" cy="200" r="140" fill="#EDE6D6" opacity="0.6"/>
+            <circle class="cookie-outline" cx="200" cy="200" r="140" fill="none" stroke="#5C6B2E" stroke-width="3" stroke-dasharray="900" stroke-dashoffset="900"/>
+            <g class="cookie-chips" fill="#5C6B2E">
+              <circle cx="150" cy="150" r="9"/><circle cx="230" cy="140" r="8"/>
+              <circle cx="260" cy="210" r="9"/><circle cx="190" cy="250" r="8"/>
+              <circle cx="140" cy="220" r="7"/><circle cx="210" cy="190" r="7"/>
+            </g>
+            <g class="cookie-chips" fill="#F2EFE4">
+              <circle cx="180" cy="180" r="10"/><circle cx="240" cy="230" r="9"/><circle cx="155" cy="230" r="8"/>
+            </g>
+          </svg>
+        </div>
+        <div class="cookie-card-body">
+          <span class="cookie-card-series">Clásica</span>
+          <h3 class="cookie-card-name">Olivo y Pistacho</h3>
+          <p class="cookie-card-subtitle">Pistacho y chocolate blanco</p>
+          <p class="cookie-card-desc">Pistacho molido en la masa, trozos enteros por encima y pepitas de chocolate blanco. La más elegante de la carta, pensada para quien no quiere solo cacao.</p>
+          <ul class="cookie-card-ingredients">
+            <li>Pistacho molido</li><li>Pistacho entero</li><li>Chocolate blanco</li><li>Mantequilla</li>
+          </ul>
+        </div>
+      </article>
+
+<article class="cookie-card" data-cookie-card style="--c-accent:#B8862E; --c-crumb:#7A4A18;">
+        <div class="cookie-card-visual">
+          <svg class="cookie-svg" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle class="cookie-base" cx="200" cy="200" r="150" fill="#caa052" opacity="0.12"/>
+            <circle class="cookie-fill" cx="200" cy="200" r="140" fill="#D9A441" opacity="0.55"/>
+            <circle class="cookie-outline" cx="200" cy="200" r="140" fill="none" stroke="#B8862E" stroke-width="3" stroke-dasharray="900" stroke-dashoffset="900"/>
+            <g class="cookie-chips" fill="#7A4A18">
+              <circle cx="150" cy="140" r="15"/><circle cx="230" cy="160" r="12"/>
+              <circle cx="260" cy="240" r="14"/><circle cx="170" cy="250" r="11"/>
+              <circle cx="130" cy="220" r="9"/><circle cx="200" cy="190" r="10"/>
+            </g>
+          </svg>
+        </div>
+        <div class="cookie-card-body">
+          <span class="cookie-card-series">Clásica</span>
+          <h3 class="cookie-card-name">Mostaza Tostada</h3>
+          <p class="cookie-card-subtitle">Mantequilla de cacahuete y caramelo</p>
+          <p class="cookie-card-desc">Pasta de cacahuete tostado en la propia masa, trozos de caramelo salado y un toque de canela. Densa, untuosa, con ese punto dulce-salado que no cansa.</p>
+          <ul class="cookie-card-ingredients">
+            <li>Mantequilla de cacahuete</li><li>Caramelo salado</li><li>Cacahuete tostado</li><li>Canela</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="cookie-card" data-cookie-card style="--c-accent:#6B4226; --c-crumb:#4A2C18;">
+        <div class="cookie-card-visual">
+          <svg class="cookie-svg" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle class="cookie-base" cx="200" cy="200" r="150" fill="#caa052" opacity="0.12"/>
+            <circle class="cookie-fill" cx="200" cy="200" r="140" fill="#8C5A30" opacity="0.55"/>
+            <circle class="cookie-outline" cx="200" cy="200" r="140" fill="none" stroke="#6B4226" stroke-width="3" stroke-dasharray="900" stroke-dashoffset="900"/>
+            <g class="cookie-chips" fill="#4A2C18">
+              <path d="M140 150 q10 -14 20 0 q10 14 -20 14 q-10 0 0 -14" /><path d="M250 140 q10 -14 20 0 q10 14 -20 14 q-10 0 0 -14" />
+              <path d="M260 230 q10 -14 20 0 q10 14 -20 14 q-10 0 0 -14" /><path d="M170 250 q10 -14 20 0 q10 14 -20 14 q-10 0 0 -14" />
+            </g>
+          </svg>
+        </div>
+        <div class="cookie-card-body">
+          <span class="cookie-card-series">Clásica</span>
+          <h3 class="cookie-card-name">Castaño Ahumado</h3>
+          <p class="cookie-card-subtitle">Nueces tostadas y miel oscura</p>
+          <p class="cookie-card-desc">Nuez tostada a baja temperatura, miel oscura de montaña y una base de mantequilla avellanada. Sabor de otoño en cada bocado.</p>
+          <ul class="cookie-card-ingredients">
+            <li>Nuez tostada</li><li>Miel oscura</li><li>Mantequilla avellanada</li><li>Vainilla</li>
+          </ul>
+        </div>
+      </article>
+
+      </div>
+    </div>
+
+    <div class="carta-group carta-group--limited">
+      <div class="carta-group-head">
+        <p class="carta-group-label">Limited Edition</p>
+        <h3 class="carta-group-title">Una receta por estación</h3>
+      </div>
+      <div class="carta-group-grid">
+        <article class="cookie-card" data-cookie-card style="--c-accent:#A14E2A; --c-crumb:#7A3618;">
+          <div class="cookie-card-visual">
+            <svg class="cookie-svg" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle class="cookie-base" cx="200" cy="200" r="150" fill="#caa052" opacity="0.12"/>
+              <circle class="cookie-fill" cx="200" cy="200" r="140" fill="#C97A3E" opacity="0.55"/>
+              <circle class="cookie-outline" cx="200" cy="200" r="140" fill="none" stroke="#A14E2A" stroke-width="3" stroke-dasharray="900" stroke-dashoffset="900"/>
+              <g class="cookie-chips" fill="#7A3618">
+                <circle cx="150" cy="150" r="12"/><circle cx="240" cy="150" r="14"/>
+                <circle cx="260" cy="230" r="10"/><circle cx="180" cy="255" r="13"/>
+                <circle cx="130" cy="215" r="9"/>
+              </g>
+            </svg>
+          </div>
+          <div class="cookie-card-body">
+            <span class="cookie-card-series">Fall Season</span>
+            <h3 class="cookie-card-name">Terracota Especiada</h3>
+            <p class="cookie-card-subtitle">Calabaza, canela y nuez moscada</p>
+            <p class="cookie-card-desc">Puré de calabaza asada integrado en la masa, especias cálidas y una costra de azúcar moreno. Edición de temporada, solo mientras dura la cosecha.</p>
+            <ul class="cookie-card-ingredients">
+              <li>Calabaza asada</li><li>Canela</li><li>Nuez moscada</li><li>Azúcar moreno</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="cookie-card" data-cookie-card style="--c-accent:#7A8C4E; --c-crumb:#5C6B38;">
+          <div class="cookie-card-visual">
+            <svg class="cookie-svg" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle class="cookie-base" cx="200" cy="200" r="150" fill="#caa052" opacity="0.12"/>
+              <circle class="cookie-fill" cx="200" cy="200" r="140" fill="#E8E0CC" opacity="0.6"/>
+              <circle class="cookie-outline" cx="200" cy="200" r="140" fill="none" stroke="#7A8C4E" stroke-width="3" stroke-dasharray="900" stroke-dashoffset="900"/>
+              <g class="cookie-chips" fill="#7A8C4E">
+                <circle cx="150" cy="150" r="9"/><circle cx="230" cy="140" r="8"/>
+                <circle cx="260" cy="210" r="9"/><circle cx="190" cy="250" r="8"/>
+                <circle cx="140" cy="220" r="7"/><circle cx="210" cy="190" r="7"/>
+              </g>
+              <g class="cookie-chips" fill="#F2EFE4">
+                <circle cx="180" cy="180" r="10"/><circle cx="240" cy="230" r="9"/><circle cx="155" cy="230" r="8"/>
+              </g>
+              <g class="cookie-chips" fill="#C9A35B">
+                <path d="M205 155 l4 9 10 1 -7 7 2 10 -9 -5 -9 5 2 -10 -7 -7 10 -1 z" transform="scale(0.55) translate(170,130)"/>
+              </g>
+            </svg>
+          </div>
+          <div class="cookie-card-body">
+            <span class="cookie-card-series">Spring Season</span>
+            <h3 class="cookie-card-name">Pistacho y Flor de Naranjo</h3>
+            <p class="cookie-card-subtitle">Pistacho, limón y agua de azahar</p>
+            <p class="cookie-card-desc">Pistacho molido en la masa, un toque de ralladura de limón fresco y un golpe sutil de agua de azahar. La más ligera de la carta, pensada para cuando empieza a apetecer algo menos denso.</p>
+            <ul class="cookie-card-ingredients">
+              <li>Pistacho molido</li><li>Ralladura de limón</li><li>Agua de azahar</li><li>Chocolate blanco</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="cookie-card" data-cookie-card style="--c-accent:#D4B85A; --c-crumb:#A38C3E;">
+          <div class="cookie-card-visual">
+            <svg class="cookie-svg" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle class="cookie-base" cx="200" cy="200" r="150" fill="#caa052" opacity="0.12"/>
+              <circle class="cookie-fill" cx="200" cy="200" r="140" fill="#EAD98A" opacity="0.6"/>
+              <circle class="cookie-outline" cx="200" cy="200" r="140" fill="none" stroke="#D4B85A" stroke-width="3" stroke-dasharray="900" stroke-dashoffset="900"/>
+              <g class="cookie-chips" fill="#FFFFFF" stroke="#C9A35B" stroke-width="1">
+                <circle cx="150" cy="150" r="9"/><circle cx="235" cy="145" r="8"/>
+                <circle cx="255" cy="225" r="9"/><circle cx="180" cy="255" r="8"/>
+                <circle cx="135" cy="215" r="7"/>
+              </g>
+              <g class="cookie-chips" fill="#6B7A3E">
+                <ellipse cx="205" cy="195" rx="9" ry="5" transform="rotate(20 205 195)"/>
+                <ellipse cx="180" cy="210" rx="9" ry="5" transform="rotate(-15 180 210)"/>
+                <ellipse cx="220" cy="215" rx="9" ry="5" transform="rotate(45 220 215)"/>
+              </g>
+            </svg>
+          </div>
+          <div class="cookie-card-body">
+            <span class="cookie-card-series">Summer Season</span>
+            <h3 class="cookie-card-name">Limón y Albahaca</h3>
+            <p class="cookie-card-subtitle">Limón, albahaca fresca y chocolate blanco</p>
+            <p class="cookie-card-desc">Ralladura y zumo de limón en la masa, albahaca fresca picada muy fina y pepitas de chocolate blanco. Fresca, cítrica, la única de la carta que no lleva chocolate negro.</p>
+            <ul class="cookie-card-ingredients">
+              <li>Limón</li><li>Albahaca fresca</li><li>Chocolate blanco</li><li>Mantequilla</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="cookie-card" data-cookie-card style="--c-accent:#5A3414; --c-crumb:#3A200C;">
+        <div class="cookie-card-visual">
+          <svg class="cookie-svg" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle class="cookie-base" cx="200" cy="200" r="150" fill="#caa052" opacity="0.12"/>
+            <circle class="cookie-fill" cx="200" cy="200" r="140" fill="#7A4A22" opacity="0.55"/>
+            <circle class="cookie-outline" cx="200" cy="200" r="140" fill="none" stroke="#5A3414" stroke-width="3" stroke-dasharray="900" stroke-dashoffset="900"/>
+            <g class="cookie-chips" fill="#3A200C">
+              <path d="M140 145 q14 -10 0 -20 q-14 10 0 20" /><path d="M240 140 q14 -10 0 -20 q-14 10 0 20" />
+              <path d="M255 230 q14 -10 0 -20 q-14 10 0 20" /><path d="M175 255 q14 -10 0 -20 q-14 10 0 20" />
+            </g>
+            <g class="cookie-chips" fill="#9C7236">
+              <circle cx="190" cy="195" r="7"/><circle cx="215" cy="210" r="6"/>
+            </g>
+          </svg>
+        </div>
+        <div class="cookie-card-body">
+          <span class="cookie-card-series">Winter Season</span>
+          <h3 class="cookie-card-name">Café y Nuez Pecana</h3>
+          <p class="cookie-card-subtitle">Espresso y nuez pecana caramelizada</p>
+          <p class="cookie-card-desc">Espresso concentrado en la masa, nuez pecana caramelizada por encima y un velo de chocolate con leche. Para quien quiere postre y café en una sola pieza.</p>
+          <ul class="cookie-card-ingredients">
+            <li>Espresso</li><li>Nuez pecana caramelizada</li><li>Chocolate con leche</li><li>Mantequilla</li>
+          </ul>
+        </div>
+      </article>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="marquee marquee--secondary marquee--reverse" aria-hidden="true">
+    <div class="marquee-track">
+      <span class="marquee-item">Chocolate negro 70%</span><span class="marquee-dot">·</span>
+      <span class="marquee-item">Mantequilla de cacahuete</span><span class="marquee-dot">·</span>
+      <span class="marquee-item">Pistacho molido</span><span class="marquee-dot">·</span>
+      <span class="marquee-item">Nuez tostada</span><span class="marquee-dot">·</span>
+      <span class="marquee-item">Calabaza asada</span><span class="marquee-dot">·</span>
+      <span class="marquee-item">Avena gruesa</span><span class="marquee-dot">·</span>
+      <span class="marquee-item">Espresso</span><span class="marquee-dot">·</span>
+      <span class="marquee-item">Chocolate negro 70%</span><span class="marquee-dot">·</span>
+      <span class="marquee-item">Mantequilla de cacahuete</span><span class="marquee-dot">·</span>
+      <span class="marquee-item">Pistacho molido</span><span class="marquee-dot">·</span>
+      <span class="marquee-item">Nuez tostada</span><span class="marquee-dot">·</span>
+      <span class="marquee-item">Chocolate negro 70%</span><span class="marquee-dot">·</span>
+      <span class="marquee-item">Mantequilla de cacahuete</span><span class="marquee-dot">·</span>
+      <span class="marquee-item">Pistacho molido</span><span class="marquee-dot">·</span>
+      <span class="marquee-item">Nuez tostada</span><span class="marquee-dot">·</span>
+      <span class="marquee-item">Calabaza asada</span><span class="marquee-dot">·</span>
+      <span class="marquee-item">Avena gruesa</span><span class="marquee-dot">·</span>
+      <span class="marquee-item">Espresso</span><span class="marquee-dot">·</span>
+    </div>
+  </div>
+</section>
+
+<!-- =======================================================================
+     CÓMO PEDIR (sección 03)
+     ======================================================================= -->
+<section class="how" id="como-pedir">
+  <span class="how-num" aria-hidden="true">03</span>
+  <p class="how-kicker reveal" data-reveal>03 · Cómo pedir</p>
+  <h2 class="how-title reveal" data-split="lines">Sin carrito, sin complicaciones. <em>Todo por WhatsApp.</em></h2>
+
+  <div class="how-grid" data-how-steps>
+    <div class="how-step reveal" data-reveal>
+      <span class="how-step-num">01</span>
+      <h3>Elige tu caja</h3>
+      <p>Mira la carta y decide qué sabores quieres. Las cajas son de 6 o 12 unidades, mezclando los sabores que prefieras.</p>
+    </div>
+    <div class="how-step reveal" data-reveal>
+      <span class="how-step-num">02</span>
+      <h3>Escríbenos</h3>
+      <p>Mándanos un WhatsApp o un mensaje por Instagram con la caja que quieres y tu código postal. Te confirmamos disponibilidad y precio en minutos.</p>
+    </div>
+    <div class="how-step reveal" data-reveal>
+      <span class="how-step-num">03</span>
+      <h3>Hornada fresca</h3>
+      <p>Horneamos martes y viernes. Tu caja se hace el mismo día que se envía o se recoge, nunca antes.</p>
+    </div>
+    <div class="how-step reveal" data-reveal>
+      <span class="how-step-num">04</span>
+      <h3>Recibe o recoge</h3>
+      <p>Envío a toda España en caja térmica, o recogida en punto de encuentro a convenir si estás cerca. Te avisamos con el seguimiento.</p>
+    </div>
+  </div>
+</section>
+
+<!-- =======================================================================
+     GALERÍA (sección 04) — 3 carriles marquee de toppings ilustrados
+     ======================================================================= -->
+<section class="gallery" id="el-detalle">
+  <span class="gallery-num" aria-hidden="true">04</span>
+  <p class="gallery-kicker reveal" data-reveal>04 · NUESTRO SELLO</p>
+  <h2 class="gallery-title reveal" data-split="lines">Lo que hace <em>la diferencia.</em></h2>
+
+  <div class="gallery-lanes" aria-hidden="true">
+    <div class="gallery-lane gallery-lane--fast">
+      <div class="gallery-lane-track">
+        <span class="gallery-chip" style="--g:#5C1A2B;">Chocolate troceado a cuchillo</span>
+        <span class="gallery-chip" style="--g:#B8862E;">Caramelo salado a mano</span>
+        <span class="gallery-chip" style="--g:#5C6B2E;">Pistacho de Sicilia</span>
+        <span class="gallery-chip" style="--g:#6B4226;">Mantequilla de Normandía</span>
+        <span class="gallery-chip" style="--g:#A14E2A;">Calabaza de temporada</span>
+        <span class="gallery-chip" style="--g:#5C1A2B;">Chocolate troceado a cuchillo</span>
+        <span class="gallery-chip" style="--g:#B8862E;">Caramelo salado a mano</span>
+        <span class="gallery-chip" style="--g:#5C6B2E;">Pistacho de Sicilia</span>
+        <span class="gallery-chip" style="--g:#6B4226;">Mantequilla de Normandía</span>
+        <span class="gallery-chip" style="--g:#A14E2A;">Calabaza de temporada</span>
+      </div>
+    </div>
+    <div class="gallery-lane gallery-lane--slow gallery-lane--reverse">
+      <div class="gallery-lane-track">
+        <span class="gallery-chip" style="--g:#8C6A1E;">Avena gruesa</span>
+        <span class="gallery-chip" style="--g:#5A3414;">Espresso de tueste natural</span>
+        <span class="gallery-chip" style="--g:#5C1A2B;">Sal en escamas Maldon</span>
+        <span class="gallery-chip" style="--g:#B8862E;">Cacahuete tostado entero</span>
+        <span class="gallery-chip" style="--g:#8C6A1E;">Avena gruesa</span>
+        <span class="gallery-chip" style="--g:#5A3414;">Espresso de tueste natural</span>
+        <span class="gallery-chip" style="--g:#5C1A2B;">Sal en escamas Maldon</span>
+        <span class="gallery-chip" style="--g:#B8862E;">Cacahuete tostado entero</span>
+      </div>
+    </div>
+    <div class="gallery-lane gallery-lane--mid">
+      <div class="gallery-lane-track">
+        <span class="gallery-chip" style="--g:#6B4226;">Nuez pecana caramelizada</span>
+        <span class="gallery-chip" style="--g:#A14E2A;">Canela de Ceilán</span>
+        <span class="gallery-chip" style="--g:#5C6B2E;">Chocolate blanco belga</span>
+        <span class="gallery-chip" style="--g:#5C1A2B;">Horneado por encargo</span>
+        <span class="gallery-chip" style="--g:#8C6A1E;">Pasas maceradas al bourbon</span>
+        <span class="gallery-chip" style="--g:#6B4226;">Nuez pecana caramelizada</span>
+        <span class="gallery-chip" style="--g:#A14E2A;">Canela de Ceilán</span>
+        <span class="gallery-chip" style="--g:#5C6B2E;">Chocolate blanco belga</span>
+        <span class="gallery-chip" style="--g:#5C1A2B;">Horneado por encargo</span>
+        <span class="gallery-chip" style="--g:#8C6A1E;">Pasas maceradas al bourbon</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =======================================================================
+     OPINIONES (sección 05)
+     ======================================================================= -->
+<section class="testimonials" id="opiniones">
+  <span class="testimonials-num" aria-hidden="true">05</span>
+  <p class="testimonials-kicker reveal" data-reveal>05 · Quien las prueba, repite</p>
+  <h2 class="testimonials-title reveal" data-split="lines">Lo que dicen <em>quienes ya han pedido.</em></h2>
+
+  <div class="testimonials-grid" data-testimonials>
+    <figure class="testimonial-card reveal" data-reveal>
+      <blockquote>"Las pedí para un cumpleaños y desaparecieron en diez minutos. La de mostaza tostada con caramelo es un vicio."</blockquote>
+      <figcaption>— Marta R.</figcaption>
+    </figure>
+    <figure class="testimonial-card reveal" data-reveal>
+      <blockquote>"Llegaron perfectas, con el centro tierno tal y como prometen. Mejor que muchas que he probado en Nueva York."</blockquote>
+      <figcaption>— Pol S.</figcaption>
+    </figure>
+    <figure class="testimonial-card reveal" data-reveal>
+      <blockquote>"Pedimos la caja de 12 para la oficina y ya es ritual de los viernes. La de café y pecana es la favorita de todos."</blockquote>
+      <figcaption>— Laia G.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- =======================================================================
+     PEDIR (sección 06) — formulario que abre WhatsApp con mensaje formateado
+     ======================================================================= -->
+<section class="order" id="pedir">
+  <div class="order-grid">
+    <div class="order-main">
+      <span class="order-num" aria-hidden="true">06</span>
+      <p class="order-kicker reveal" data-reveal>06 · Pedir caja</p>
+      <h2 class="order-title reveal" data-split="lines">Rellena esto <em>y te escribimos.</em></h2>
+      <p class="order-sub reveal" data-reveal>Al enviar, se abre WhatsApp con tu pedido ya redactado. Solo tienes que pulsar enviar.</p>
+
+      <form class="order-form" id="orderForm" novalidate>
+        <div class="order-field">
+          <span class="order-field-prefix">01</span>
+          <label for="ofName">Nombre</label>
+          <input type="text" id="ofName" name="name" placeholder="¿Cómo te llamas?" required />
+        </div>
+
+        <div class="order-field">
+          <span class="order-field-prefix">02</span>
+          <label for="ofPhone">Teléfono</label>
+          <input type="tel" id="ofPhone" name="phone" placeholder="600 11 22 33" required />
+        </div>
+
+        <div class="order-field-split">
+          <div class="order-field">
+            <span class="order-field-prefix">03</span>
+            <label for="ofBox">Caja</label>
+            <select id="ofBox" name="box" required>
+              <option value="">Elige tamaño</option>
+              <option value="Caja de 6">Caja de 6</option>
+              <option value="Caja de 12">Caja de 12</option>
+            </select>
+          </div>
+          <div class="order-field">
+            <span class="order-field-prefix">04</span>
+            <label for="ofFlavors">Sabores</label>
+            <input type="text" id="ofFlavors" name="flavors" placeholder="Ej: Borgoña Negra, Mostaza Tostada…" />
+          </div>
+        </div>
+
+        <div class="order-field">
+          <span class="order-field-prefix">05</span>
+          <label for="ofNote">Nota (opcional)</label>
+          <textarea id="ofNote" name="note" rows="2" placeholder="Código postal, alergias, fecha que necesitas…"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary order-submit" data-cursor="enviar">
+          <span>Enviar pedido por WhatsApp</span>
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 9H14M14 9L9.5 4.5M14 9L9.5 13.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+
+        <a class="order-alt-link" id="orderAltLink" href="https://wa.me/34600112233" target="_blank" rel="noopener">…o más rápido por WhatsApp directo →</a>
+      </form>
+    </div>
+
+    <aside class="order-aside reveal" data-reveal>
+      <div class="order-aside-item">
+        <span class="order-aside-label">WhatsApp</span>
+        <a href="https://wa.me/34600112233" target="_blank" rel="noopener">+34 600 11 22 33</a>
+      </div>
+      <div class="order-aside-item">
+        <span class="order-aside-label">Instagram</span>
+        <a href="https://instagram.com/thecookiebakehouse" target="_blank" rel="noopener">@thecookiebakehouse</a>
+      </div>
+      <div class="order-aside-item">
+        <span class="order-aside-label">Hornadas</span>
+        <span>Martes y viernes</span>
+      </div>
+      <div class="order-aside-item">
+        <span class="order-aside-label">Envíos</span>
+        <span>A toda España, en caja térmica</span>
+      </div>
+    </aside>
+  </div>
+</section>
+
+</main>
+
+<!-- =======================================================================
+     FOOTER
+     ======================================================================= -->
+<footer class="footer">
+  <div class="footer-display" aria-hidden="true">
+    <span>The Cookie Bakehouse · </span><span>The Cookie Bakehouse · </span><span>The Cookie Bakehouse · </span>
+  </div>
+
+  <div class="footer-grid">
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <a href="https://wa.me/34600112233" target="_blank" rel="noopener">WhatsApp: +34 600 11 22 33</a>
+      <a href="https://instagram.com/thecookiebakehouse" target="_blank" rel="noopener">Instagram: @thecookiebakehouse</a>
+      <a href="mailto:hola@thecookiebakehouse.com">hola@thecookiebakehouse.com</a>
+    </div>
+    <div class="footer-col">
+      <h4>Pedidos</h4>
+      <p>Hornadas martes y viernes.</p>
+      <p>Pide con 48h de antelación.</p>
+      <p>Envíos a toda España en caja térmica.</p>
+    </div>
+    <div class="footer-col">
+      <h4>The Cookie Bakehouse</h4>
+      <p>Galletería de autor 100% online.</p>
+      <p>Hecho a mano, sin mezclas premezcladas.</p>
+    </div>
+  </div>
+
+  <div class="footer-legal">
+    <span>© 2026 The Cookie Bakehouse. Todos los derechos reservados.</span>
+    <a href="#pedir">↑ Volver arriba</a>
+  </div>
+</footer>
+
+<!-- =======================================================================
+     SCRIPTS — classic defer + IIFE pattern (no ES modules used here).
+     ======================================================================= -->
+<script defer src="lib/gsap.min.js?v=20260628"></script>
+<script defer src="lib/ScrollTrigger.min.js?v=20260628"></script>
+<script defer src="lib/manifest.js?v=20260628"></script>
+<script defer src="main.js?v=20260628"></script>
+
+</body>
+</html>
