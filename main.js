@@ -30,11 +30,17 @@
   function initSplash() {
     var splash = $("#splash");
     if (!splash) return;
+    var startedAt = Date.now();
+    var hideTimer;
     var hide = function () { splash.classList.add("splash-done"); };
-    // Hide a bit before the CSS animation would (snappier perceived load),
-    // but never blocks: CSS keeps going regardless.
-    setTimeout(hide, 2200);
-    window.addEventListener("load", function () { setTimeout(hide, 300); });
+    var hideAfterLoad = function () {
+      clearTimeout(hideTimer);
+      hideTimer = setTimeout(hide, Math.max(0, 3600 - (Date.now() - startedAt)));
+    };
+
+    hideTimer = setTimeout(hide, 8000);
+    if (document.readyState === "complete") hideAfterLoad();
+    else window.addEventListener("load", hideAfterLoad, { once: true });
   }
 
   // ---------------------------------------------------------------------

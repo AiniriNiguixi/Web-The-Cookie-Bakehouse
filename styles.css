@@ -209,7 +209,7 @@ em { font-style: italic; }
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: splashHide 4.5s var(--ease-out) forwards;
+  animation: splashHide 8.5s var(--ease-out) forwards;
 }
 .splash-inner {
   display: flex;
@@ -265,7 +265,7 @@ em { font-style: italic; }
   height: 100%;
   width: 0%;
   background: var(--gold);
-  animation: splashBarFill 1.6s .5s var(--ease-out) forwards;
+  animation: splashBarFill 2.4s .5s var(--ease-out) forwards;
 }
 @keyframes splashBarFill { to { width: 100%; } }
 
@@ -396,6 +396,7 @@ em { font-style: italic; }
   top: var(--nav-h);
   left: 0; right: 0;
   background: var(--paper);
+  color: var(--ink-soft);
   border-bottom: 1px solid var(--line);
   display: flex;
   flex-direction: column;
@@ -417,6 +418,7 @@ em { font-style: italic; }
   font-size: 1.05rem;
   border-bottom: 1px solid var(--line-soft);
 }
+.nav-mobile .nav-num { color: var(--ink-mute); }
 .nav-mobile .nav-cta {
   margin-top: .75rem;
   justify-content: center;
